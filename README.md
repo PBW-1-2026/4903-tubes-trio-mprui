@@ -1,4 +1,5 @@
-# 4903-tubes-trio-mprui
-4903-tubes-trio-mprui created by GitHub Classroom
-Nama Kelompok Trio mpruy
-Mohammad Khuzaifah 607062530003
+Aplikasi Food Delivery 
+Nama aplikasi: Rakes
+Aplikasi ini merupakan aplikasi food delivery yang berisi..
+Susunan team
+Moh Khuzaifah Al-muttaqiin607062530003
