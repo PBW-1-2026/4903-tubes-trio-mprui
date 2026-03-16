@@ -1,6 +1,4 @@
-
-Aplikasi Food Delivery 
-Nama aplikasi: Rakes
+# Aplikasi Food Delivery/Rakes
 Aplikasi ini merupakan aplikasi food delivery yang berisi..
-Susunan team
+# Susunan team
 Moh Khuzaifah Al-muttaqiin607062530003
