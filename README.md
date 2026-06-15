@@ -1,8 +1,6 @@
-# Aplikasi Food Delivery/Rakes
-Aplikasi ini merupakan aplikasi food delivery yang berfungsi untuk mengantarkan makanan 
-terutama bagi mahasiswa-mahasiswa yang sibuk dengan tugas dan tidak sempat untuk memasak
-apalagi dengan harga harga produk kami yang lebih terjangkau dengan delivery fee yang lebih sedikit
-apalagi dengan design UI kami yang nyentrik simpel namun elegan
+# Aplikasi Travel app professional
+Tugas besar ini berisi Aplikasi Travel app professional yang di buat dengan kolaborasi oleh Felix Rifiano
+Daffa Khairu Nasywan dan Moh Khuzaifah Al-muttaqiin
 ## Anggota Kelompok
 
 | No | Nama | NIM |
