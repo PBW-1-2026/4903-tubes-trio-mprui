@@ -19,7 +19,6 @@
         <label>JENIS KENDARAAN</label>
         <div class="option-grid">
             <label class="option-card"><input type="radio" name="jenis" value="mobil" checked><i class="fas fa-car"></i> Mobil</label>
-            <label class="option-card"><input type="radio" name="jenis" value="bus"><i class="fas fa-bus"></i> Bus</label>
         </div>
 
         <div class="input-group">
