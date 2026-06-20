@@ -1,8 +1,7 @@
-# Aplikasi Food Delivery/Rakes
-Aplikasi ini merupakan aplikasi food delivery yang berfungsi untuk mengantarkan makanan 
-terutama bagi mahasiswa-mahasiswa yang sibuk dengan tugas dan tidak sempat untuk memasak
-apalagi dengan harga harga produk kami yang lebih terjangkau dengan delivery fee yang lebih sedikit
-apalagi dengan design UI kami yang nyentrik simpel namun elegan
+# Aplikasi Traleri
+Aplikasi Traleri merupakan aplikasi Travel yang membantu anda untuk pergi jarak jauh menggunakan mobil travel 
+tanpa lama mahal dan ribet kalo anda ingin pergi jauh ingin pulang kampung traleri solusinya 
+Traleri Travel Lelet Dan Ribet
 
 ## Anggota Kelompok
 
