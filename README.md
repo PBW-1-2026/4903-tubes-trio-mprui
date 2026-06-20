@@ -1,7 +1,7 @@
 # Aplikasi Traleri
 Aplikasi Traleri merupakan aplikasi Travel yang membantu anda untuk pergi jarak jauh menggunakan mobil travel 
 tanpa lama mahal dan ribet kalo anda ingin pergi jauh ingin pulang kampung traleri solusinya 
-Traleri Travel Lelet Dan Ribet
+Traleri Travel Tanpa Lelet Dan Ribet
 
 
 ## Anggota Kelompok
