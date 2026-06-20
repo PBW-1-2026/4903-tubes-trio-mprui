@@ -25,5 +25,5 @@ if(mysqli_num_rows($q) > 0) {
 
 
 header("location:login.php?error=" . urlencode($error));
-exit; // TAMBAHIN EXIT DI SINI JUGA
+exit; 
 ?>
