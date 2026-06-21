@@ -42,15 +42,17 @@ session_start();
     <div class="hero-banner">
         <div style="text-align: right;"> ... </div>
         <div class="navbar">
-    <div style="font-size: 20px; font-weight: 800; letter-spacing: 1px;">TravelApp</div>
+            <div style="font-size: 20px; font-weight: 800; letter-spacing: 1px;">TravelApp</div>
             <div class="nav-links">
-                <?php if(isset($_SESSION['username'])): ?>
-                    <a href="profil.php" style="color: white; text-decoration: none;">Profike
-                    </a>
-                    <a href="myticket.php">My Ticket & History</a>
+                
+                <?php if(isset($_SESSION['username'])) { ?>
+                    <a href="profil.php" >Profile</a>
+                    <a href="myticket.php">My Ticket</a>
                     <a href="logout.php" class="btn-login">Logout</a>
+                <?php } else { ?>
                     <a href="login.php" class="btn-login">Login / Daftar</a>
-                <?php endif; ?>
+                <?php } ?>
+                
             </div>
         </div>
 
