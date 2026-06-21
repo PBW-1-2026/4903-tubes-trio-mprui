@@ -12,20 +12,17 @@ body {
     padding-bottom: 80px; 
 }
 
-/* Hero Banner */
 .hero-banner { 
-    padding: 40px 20px 60px 20px; /* Padding bawah (60px) kasih ruang buat card */
+    padding: 40px 20px 60px 20px; 
     background: linear-gradient(135deg, var(--primary), #008848); 
     color: white; 
 }
 
-/* Main Content: Hapus margin-top negatif yang bikin nabrak */
 .main-content { 
     padding: 0 20px; 
-    margin-top: -40px; /* Sedikit naik biar estetik tapi aman */
+    margin-top: -40px;
 }
 
-/* Card: Biar nggak nabrak, kita atur margin-nya di sini */
 .card { 
     background: var(--white); 
     padding: 20px; 
@@ -34,18 +31,16 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
 }
 
-/* Error Message: Biar nggak nabrak sama form login */
 .error-msg {
     background: #ffebee; 
     color: #c62828; 
     padding: 12px; 
     border-radius: 12px; 
-    margin-bottom: 20px; /* Kasih jarak antar error dan card */
+    margin-bottom: 20px;
     text-align: center; 
     border: 1px solid #ef9a9a;
 }
 
-/* Input & Buttons */
 .input-group { margin-bottom: 15px; }
 input { 
     width: 100%; padding: 14px; border: 1.5px solid #eee; 

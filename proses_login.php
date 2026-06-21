@@ -15,7 +15,7 @@ if(mysqli_num_rows($q) > 0) {
         $_SESSION['role'] = $data['role'];
         
         header("location:index.php");
-        exit; // WAJIB ADA BIAR GAK LANJUT KE BAWAH
+        exit; 
     } else {
         $error = "Password yang Anda masukkan salah!";
     }
@@ -23,7 +23,7 @@ if(mysqli_num_rows($q) > 0) {
     $error = "Akun tidak ditemukan!";
 }
 
-// Baris ini cuma bakal jalan kalau login GAGAL
+
 header("location:login.php?error=" . urlencode($error));
-exit; // TAMBAHIN EXIT DI SINI JUGA
+exit; 
 ?>

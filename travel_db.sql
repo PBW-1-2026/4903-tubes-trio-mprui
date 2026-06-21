@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 13 Jun 2026 pada 07.12
+-- Waktu pembuatan: 18 Jun 2026 pada 10.34
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.0.28
 
@@ -33,7 +33,9 @@ CREATE TABLE `transaksi` (
   `nama_pemesan` varchar(100) DEFAULT NULL,
   `no_kursi` int(11) DEFAULT NULL,
   `status` enum('pending','lunas') DEFAULT 'pending',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `expired_at` timestamp NULL DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -57,6 +59,28 @@ INSERT INTO `travel` (`id`, `rute`, `jam`, `harga`) VALUES
 (1, 'Bandung - Jakarta', '08:00', 150000),
 (2, 'Bandung - Jakarta', '13:00', 175000);
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `tgl_lahir` date DEFAULT NULL,
+  `no_hp` varchar(20) DEFAULT NULL,
+  `role` enum('admin','user') DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `tgl_lahir`, `no_hp`, `role`) VALUES
+(1, 'felix', '123', '2026-06-13', '2313', 'user');
+
 --
 -- Indexes for dumped tables
 --
@@ -75,6 +99,12 @@ ALTER TABLE `travel`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -82,13 +112,19 @@ ALTER TABLE `travel`
 -- AUTO_INCREMENT untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `travel`
 --
 ALTER TABLE `travel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
