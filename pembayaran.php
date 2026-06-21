@@ -36,4 +36,4 @@ if(isset($_POST['submit'])) {
     }, 1000);
 </script>
 </body>
-</html>
+</html>//
