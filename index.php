@@ -47,7 +47,7 @@ session_start();
                 <?php if(isset($_SESSION['username'])): ?>
                     <a href="profil.php" style="color: white; text-decoration: none;">Profike
                     </a>
-                    <a href="myticket.php">My Ticket & History</a>
+                    <a href="myticket.php">My Ticket</a>
                     <a href="logout.php" class="btn-login">Logout</a>
                     <a href="login.php" class="btn-login">Login / Daftar</a>
                 <?php endif; ?>
