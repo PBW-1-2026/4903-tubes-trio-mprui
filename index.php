@@ -7,7 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TravelApp - Beranda</title>
+    <title>Traleri - Beranda</title>
     <style>
         .navbar {
             display: flex;
@@ -42,7 +42,7 @@ session_start();
     <div class="hero-banner">
         <div style="text-align: right;"> ... </div>
         <div class="navbar">
-    <div style="font-size: 20px; font-weight: 800; letter-spacing: 1px;">TravelApp</div>
+    <div style="font-size: 20px; font-weight: 800; letter-spacing: 1px;">Traleri</div>
             <div class="nav-links">
                 <?php if(isset($_SESSION['username'])): ?>
                     <a href="profil.php" style="color: white; text-decoration: none;">Profike
