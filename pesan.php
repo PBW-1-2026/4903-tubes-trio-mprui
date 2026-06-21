@@ -38,4 +38,4 @@ if(isset($_POST['pilih_kursi'])) {
         <button type="submit" name="pilih_kursi" class="btn">Booking Sekarang</button>
     </form>
 </div>
-?>//
+?>
