@@ -14,7 +14,13 @@ if(mysqli_num_rows($q) > 0) {
         $_SESSION['username'] = $data['username'];
         $_SESSION['role'] = $data['role'];
         
-        header("location:index.php");
+    
+        if($data['role'] == 'admin') {
+            header("location:admin.php");
+        } else {
+            header("location:index.php");
+        }
+        
         exit; 
     } else {
         $error = "Password yang Anda masukkan salah!";
