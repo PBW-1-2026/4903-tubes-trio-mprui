@@ -14,7 +14,6 @@ if(mysqli_num_rows($q) > 0) {
         $_SESSION['username'] = $data['username'];
         $_SESSION['role'] = $data['role'];
         
-    
         if($data['role'] == 'admin') {
             header("location:admin.php");
         } else {
@@ -28,7 +27,6 @@ if(mysqli_num_rows($q) > 0) {
 } else {
     $error = "Akun tidak ditemukan!";
 }
-
 
 header("location:login.php?error=" . urlencode($error));
 exit; 

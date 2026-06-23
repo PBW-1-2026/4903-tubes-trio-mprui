@@ -13,4 +13,4 @@ mysqli_query($conn, "UPDATE transaksi SET status='Lunas' WHERE id_transaksi='$id
 
 header("location:admin.php");
 exit;
-?>
+?>//

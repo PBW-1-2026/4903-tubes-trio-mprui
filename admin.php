@@ -28,7 +28,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
                 <th>Aksi</th>
             </tr>
             
-           <?php
+            <?php
             $q = mysqli_query($conn, "SELECT * FROM transaksi WHERE status='Pending'");
             
             while($row = mysqli_fetch_assoc($q)) { 
@@ -38,6 +38,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
                 <td><b style="color: orange;">Pending</b></td>
                 <td>
                     <button onclick="accTiket(<?php echo $row['id_transaksi']; ?>)" class="btn" style="background: #2e7d32; padding: 5px 15px; color: white; border: none; border-radius: 4px; cursor: pointer;">ACC Tiket</button>
+                    <button onclick="cancelTiket(<?php echo $row['id_transaksi']; ?>)" class="btn" style="background: #c62828; padding: 5px 15px; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 5px;">Cancel</button>
                 </td>
             </tr>
             <?php 

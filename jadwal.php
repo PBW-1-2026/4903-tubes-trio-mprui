@@ -1,7 +1,7 @@
 <?php include 'koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="id">
-<head>
+<head>//
     <meta charset="UTF-8">
     <title>Pilih Jadwal</title>
     <link rel="stylesheet" href="style.css">

@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit;
@@ -38,16 +37,15 @@ $ambil = mysqli_query($conn, "SELECT * FROM transaksi WHERE nama_pemesan = '$use
                 
                 <p style="color: #666; font-size: 14px;">
                     Status Pembayaran:<br>
-                    <?php if($row['status'] == 'pending') { ?>
+                    <?php if(strtolower($row['status']) == 'pending') { ?>
                         <b style="color: orange;">Menunggu Pembayaran</b>
                     <?php } else { ?>
                         <b style="color: green;">LUNAS</b>
                     <?php } ?>
                 </p>
 
-                <?php if($row['status'] == 'pending') { ?>
+                <?php if(strtolower($row['status']) == 'pending') { ?>
                     <a href="pembayaran.php?id=<?= $row['id_transaksi']; ?>" class="btn" style="background-color: orange; display: block; text-align: center; text-decoration: none;">Bayar Sekarang</a>
-                
                 <?php } ?>
             </div>
 
