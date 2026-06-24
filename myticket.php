@@ -32,7 +32,7 @@ $ambil = mysqli_query($conn, "SELECT * FROM transaksi WHERE nama_pemesan = '$use
 
         <?php while($row = mysqli_fetch_array($ambil)) { ?>
             
-            <div class="card">
+            <div class="card" id="tiket-<?= $row['id_transaksi']; ?>">
                 <h3 style="margin-top: 0;">Kode Travel: #<?= $row['id_travel']; ?> ➔ Kursi: <?= $row['no_kursi']; ?></h3>
                 
                 <p style="color: #666; font-size: 14px;">
@@ -45,13 +45,18 @@ $ambil = mysqli_query($conn, "SELECT * FROM transaksi WHERE nama_pemesan = '$use
                 </p>
 
                 <?php if(strtolower($row['status']) == 'pending') { ?>
-                    <a href="pembayaran.php?id=<?= $row['id_transaksi']; ?>" class="btn" style="background-color: orange; display: block; text-align: center; text-decoration: none;">Bayar Sekarang</a>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="pembayaran.php?id=<?= $row['id_transaksi']; ?>" class="btn" style="background-color: orange; flex: 1; text-align: center; text-decoration: none; padding: 8px 0; border-radius: 4px; color: white;">Bayar Sekarang</a>
+                        <button onclick="userCancelTiket(<?= $row['id_transaksi']; ?>)" class="btn" style="background-color: #c62828; flex: 1; border: none; border-radius: 4px; color: white; cursor: pointer; padding: 8px 0;">Cancel Tiket</button>
+                    </div>
                 <?php } ?>
             </div>
 
         <?php } ?>
 
     </div>
+
+    <script src="ajax.js"></script>
 
 </body>
 </html>

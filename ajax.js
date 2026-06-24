@@ -29,3 +29,19 @@ function cancelTiket(id) {
     
     xhr.send();
 }
+
+function userCancelTiket(id) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "proses_cancel.php?id=" + encodeURIComponent(id), true);
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var kartuTiket = document.getElementById("tiket-" + id);
+            if (kartuTiket) {
+                kartuTiket.style.display = "none";
+            }
+        }
+    };
+    
+    xhr.send();
+}
