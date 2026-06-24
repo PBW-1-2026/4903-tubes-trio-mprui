@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
         </div>
         <p style="font-size: 12px; color: #888;">Scan QRIS di atas untuk membayar</p>
         
-        <a href="index.php" 
+        <a href="https://wa.me/6282179179421" 
            class="btn" 
            style="background: #25D366; text-decoration: none; max-width: 250px; display: block; margin-top: 5px;">
            Sudah Bayar
